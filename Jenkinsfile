@@ -34,15 +34,14 @@ pipeline {
         }
          stage('Just testing ') {
             steps {
-                echo 'Stage --: Automatic trigger '
+                echo 'Stage 9 Automatic trigger '
             }
         }
-        stage('Just testing ') {
+        stage('automatic  testing ') {
             steps {
-                echo 'Stage --: Automatic trigger '
+                echo 'Stage 8 Automatic trigger '
             }
         }
-
         stage('Deploy to Production') {
             steps {
                 echo 'Stage 7: Deploy to AWS EC2 (production)'

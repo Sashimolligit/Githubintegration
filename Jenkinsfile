@@ -37,6 +37,11 @@ pipeline {
                 echo 'Stage --: Automatic trigger '
             }
         }
+        stage('Just testing ') {
+            steps {
+                echo 'Stage --: Automatic trigger '
+            }
+        }
 
         stage('Deploy to Production') {
             steps {

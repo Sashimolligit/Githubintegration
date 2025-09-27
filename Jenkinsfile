@@ -31,6 +31,11 @@ pipeline {
                 echo 'Stage 6: Run integration tests with Selenium on staging'
             }
         }
+        stage('Test') {
+            steps {
+                echo 'Stage 8: Testing'
+            }
+        }
         stage('Deploy to Production') {
             steps {
                 echo 'Stage 7: Deploy to AWS EC2 (production)'

@@ -1,8 +1,5 @@
 pipeline {
     agent any
-     triggers {
-        pollSCM('H/1 * * * *')  // Poll SCM every minute
-    }
     stages {
         stage('Build') {
             steps {
@@ -32,16 +29,6 @@ pipeline {
         stage('Integration Tests on Staging') {
             steps {
                 echo 'Stage 6: Run integration tests with Selenium on staging'
-            }
-        }
-         stage('Just testing ') {
-            steps {
-                echo 'Stage 9 Automatic trigger '
-            }
-        }
-        stage('automatic  testing ') {
-            steps {
-                echo 'Stage 8 Automatic trigger '
             }
         }
         stage('Deploy to Production') {

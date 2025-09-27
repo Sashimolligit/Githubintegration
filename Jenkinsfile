@@ -32,6 +32,11 @@ pipeline {
                 echo 'Stage 6: Run integration tests with Selenium on staging'
             }
         }
+         stage('Just testing ') {
+            steps {
+                echo 'Stage --: Automatic trigger '
+            }
+        }
 
         stage('Deploy to Production') {
             steps {
